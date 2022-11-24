@@ -10,6 +10,31 @@ import { BookSearchComponent } from './book-search/book-search.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
 import { BookDeleteComponent } from './book-delete/book-delete.component';
 import { BookIssueComponent } from './book-issue/book-issue.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoute: Routes=[
+  {
+    path:"",component:AdminLoginComponent
+  },
+  {
+    path:"delete",component:BookDeleteComponent
+  },
+  {
+    path:"edit",component:BookEditComponent
+  },
+  {
+    path:"entry",component:BookEntryComponent
+  },
+  {
+    path:"search",component:BookSearchComponent
+  },
+  {
+    path:"viewall",component:BookViewAllComponent
+  },
+  {
+    path:"issue",component:BookIssueComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -24,7 +49,8 @@ import { BookIssueComponent } from './book-issue/book-issue.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
