@@ -11,6 +11,7 @@ import { BookEditComponent } from './book-edit/book-edit.component';
 import { BookDeleteComponent } from './book-delete/book-delete.component';
 import { BookIssueComponent } from './book-issue/book-issue.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 const myRoute: Routes=[
   {
@@ -45,7 +46,8 @@ const myRoute: Routes=[
     BookSearchComponent,
     BookEditComponent,
     BookDeleteComponent,
-    BookIssueComponent
+    BookIssueComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
