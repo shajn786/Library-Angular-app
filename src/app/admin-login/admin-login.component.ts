@@ -19,6 +19,14 @@ export class AdminLoginComponent {
 
      console.log(data)
 
+     if (this.username== "admin" && this.password == "1234") {
+
+      alert("valid login")
+      
+     } else {
+      alert("invalid login")
+      
+     }
 
   }
 
