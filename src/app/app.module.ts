@@ -14,6 +14,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { UserRegisterComponent } from './user-register/user-register.component';
 
 const myRoute: Routes=[
   {
@@ -39,6 +40,9 @@ const myRoute: Routes=[
   },
   {
     path:"userlogin",component:UserLoginComponent
+  },
+  {
+    path:"register",component:UserRegisterComponent
   }
 ]
 
@@ -53,7 +57,8 @@ const myRoute: Routes=[
     BookDeleteComponent,
     BookIssueComponent,
     NavBarComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    UserRegisterComponent
   ],
   imports: [
     BrowserModule,
