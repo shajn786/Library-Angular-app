@@ -17,6 +17,24 @@ export class BookEntryComponent {
   releasedYear=""
   price=""
 
+  readValues= ()=>
+  {
+    let data:any ={
+      "title":this.title,
+      "author":this.author,
+      "image":this.image,
+      "description":this.description,
+      "publisher":this.publisher,
+      "language":this.language,
+      "distributor":this.distributor,
+      "releasedYear":this.releasedYear,
+      "price":this.price
+
+    }
+
+    console.log(data)
+  }
+
   
   
 
