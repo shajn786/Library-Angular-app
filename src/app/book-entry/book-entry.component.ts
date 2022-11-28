@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class BookEntryComponent {
 
+  title=""
+  author=""
+  image=""
+  description=""
+  publisher=""
+  language=""
+  distributor=""
+  releasedYear=""
+  price=""
+
+  
+  
+
 }
